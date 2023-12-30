@@ -48,8 +48,7 @@ function Projects() {
         initial={{ y: -70, opacity: 0 }}
         whileInView={{ y: 0, opacity: 100 }}
         transition={{ duration: 2 }}
-        viewport={{ once: true }}
-        className="mt-14 xl:text-5xl lg:text-4xl text-2xl border-t-2 border-purple-300 pt-4 xl:ml-28 lg:ml-10 ml-8 w-fit font-bold "
+        className="mt-14 md:text-[3vw] text-[5vw] border-t-2 border-green-300 pt-4 xl:ml-28 lg:ml-10 ml-8 w-fit font-bold "
       >
         Projects
       </motion.h2>

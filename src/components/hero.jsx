@@ -31,39 +31,39 @@ function Hero() {
   }, []);
 
   return (
-    <div className="shadow-2xl border-b border-gray-500 relative h-[105vh] w-[100%]">
+    <div className="shadow-2xl border-b border-gray-500 relative md:h-[105vh]  h-[50vh] w-[100%]">
       <div className="absolute h-[105vh] w-[100%] z-10" />
 
       <Nav></Nav>
-      <Spline
-        className="absolute max-lg:hidden z-0"
+      {/* <Spline
+        className="absolute hidden z-0 "
         scene="https://prod.spline.design/r9ISq204R8493YpB/scene.splinecode"
-      />
+      /> */}
 
-      <div className="font-bold absolute my-72 mx-20 z-20">
+      <div className="font-bold absolute md:mt-[30vh] mt-[20vh] max-md:text-center sm:ml-20 mx-5 z-20">
         <motion.div
           animate={{
-            y: [-200, -200, -100, -100, 0],
-            x: [100, 100, 100, 100, 0],
+            y: [-100, -100, -50, -50, 0],
+            x: [50, 50, 50, 50, 0],
             transition: {
               y: { duration: 5 },
               x: { duration: 6, delay: 1 },
             },
           }}
-          className="md:text-3xl text-xl float-left "
+          className="md:text-[2.5vw] text-[3vw] mb-[-4vw]"
         >
           Hello,
         </motion.div>
         <motion.div
           animate={{
-            x: [-760, -600, 100, 100, 0],
+            x: [-800, 50, 50, 50, 0],
             transition: { x: { duration: 6, delay: 1 } },
           }}
-          transition={{ repeat: 10 }}
-          className="md:text-6xl text-lg "
+          transition={{}}
+          className="md:text-[3vw] mb-[-1.5vw]"
         >
-          <br /> I'm <span className="text-green-300 font-bold">Mohanned</span>{" "}
-          <br />
+          <br /> I'm <span className="text-green-300 font-bold ">Mohanned</span>{" "}
+          <br className="max-sm:hidden" />
           {dev}
           <Cursor />
           <span className="text-purple-400 font-bold"> developer</span>
@@ -72,7 +72,7 @@ function Hero() {
           initial={{ x: -1000 }}
           animate={{ x: 0 }}
           transition={{ delay: 6, duration: 0.5 }}
-          className="font-thin md:text-base text-[10px] max-sm:text-center lg:mt-6 mt-2 text-purple-200"
+          className=" md:text-[1vw] text-[1.8vw] max-sm:text-center lg:mt-6 mt-2 text-purple-200"
         >
           I am an information techonolgy Faculty of Computing and Information
           Technology at King AbdulAziz University

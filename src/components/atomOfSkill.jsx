@@ -11,7 +11,6 @@ function AtomOfSkill(props) {
         opacity: 1,
         transition: { opacity: { dealy: Infinity, duration: 2 } },
       }}
-      viewport={{ once: true }}
       transition={{
         repeat: Infinity,
         duration: 1,
@@ -19,12 +18,12 @@ function AtomOfSkill(props) {
         repeatType: "mirror",
         ease: "easeInOut",
       }}
-      className="md:h-64 h-32 max-md:w-30 shadow-2xl shadow-indigo-400 hover:brightness-125 border-2 border-solid  p-6 rounded-3xl flex flex-col justify-center items-center"
+      className="md:h-[15vw] h-[16vw] shadow-lg shadow-purple-400 hover:brightness-125 border-2 border-solid p-6 max-sm:rounded-xl rounded-3xl flex flex-col justify-center items-center"
     >
       <motion.img
         drag
         dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-        className="md:h-32 h-12 flex justify-center items-center "
+        className="lg:h-[8vw] sm:h-[6vw] h-[4vw] flex justify-center items-center"
         src={props.img}
       ></motion.img>
 
@@ -32,8 +31,11 @@ function AtomOfSkill(props) {
         drag
         dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
       >
-        <div className="flex justify-center mt-4 font-bold md:text-base  text-[10px]"> {props.name}</div>
-        <div className="flex justify-center mt-1 opacity-60  md:text-xs text-[6px]">
+        <div className="flex justify-center mt-4 font-bold xl:text-[1.2vw] text-[1.8vw]">
+          {" "}
+          {props.name}
+        </div>
+        <div className="flex justify-center mt-1 opacity-60 xl:text-[0.7vw] text-[0.7vw]">
           {props.type}
         </div>
       </motion.div>

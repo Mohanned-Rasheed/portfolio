@@ -10,12 +10,12 @@ function ContactMe() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      "service_g2fq19e",
-      "template_tesbspu",
-      form.current,
-      "CjpNp9zFaM61Xptsq"
-    );
+    // emailjs.sendForm(
+    //   "service_g2fq19e",
+    //   "template_tesbspu",
+    //   form.current,
+    //   "CjpNp9zFaM61Xptsq"
+    // );
     setUser_name("");
     setUser_email("");
     setMessage("");
@@ -28,7 +28,7 @@ function ContactMe() {
   return (
     <div
       id="contactMe"
-      className="h-[90vh] border-t border-gray-500 flex items-center flex-col relative mx-5"
+      className="mb-[15vh] border-t border-gray-500 flex items-center flex-col relative mx-5"
     >
       {banner ? (
         <motion.div
@@ -46,20 +46,20 @@ function ContactMe() {
         whileInView={{ y: 0, opacity: 100 }}
         transition={{ duration: 2 }}
         viewport={{ once: true }}
-        className="text-4xl mt-36"
+        className="md:text-[4vw] text-[6vw] mt-[10vw]"
       >
         Intrested? Contact Me
       </motion.div>
-      <div>
+      <div className="">
         <form
-          className="grid grid-cols-4 gap-5 mt-16"
+          className="grid grid-cols-8 gap-5 mt-[3vw] lg:w-[60vw] w-[90vw] "
           onSubmit={sendEmail}
           ref={form}
         >
           <motion.input
             initial={{ y: 100 }}
             whileInView={{ y: 0 }}
-            className="border-2 rounded-xl hover:border-gray-500  col-span-1 h-12"
+            className="border-2 rounded-xl hover:border-gray-500 col-start-1 col-end-5 xl:h-[7vh] sm:h-[12vw] h-[15vw] sm:placeholder:text-[1.5vw] placeholder:text-[3vw] lg:text-[1.5vw] text-[2.4vw]"
             type="text"
             name="user_name"
             value={user_name}
@@ -71,7 +71,7 @@ function ContactMe() {
           <motion.input
             initial={{ y: 100 }}
             whileInView={{ y: 0 }}
-            className="border-2 rounded-xl hover:border-gray-500 col-span-3"
+            className="border-2 rounded-xl hover:border-gray-500 col-start-5 col-end-9 xl:h-[7vh] sm:h-[12vw] h-[15vw] sm:placeholder:text-[1.5vw] placeholder:text-[3vw] lg:text-[1.5vw] text-[2.4vw]"
             required
             type="text"
             name="user_email"
@@ -86,7 +86,7 @@ function ContactMe() {
             initial={{ y: 100 }}
             whileInView={{ y: 0 }}
             rows={3}
-            className="place-content-center border-2 rounded-xl hover:border-gray-500 col-span-4 h-20"
+            className="place-content-center border-2 rounded-xl hover:border-gray-500 col-start-1 col-end-9  h-[18vh] sm:placeholder:text-[1.5vw] placeholder:text-[3vw] lg:text-[1.5vw] text-[2.4vw]"
             type="textarea"
             name="message"
             value={message}
@@ -98,7 +98,7 @@ function ContactMe() {
           <motion.input
             initial={{ y: 100 }}
             whileInView={{ y: 0 }}
-            className="border-2  rounded-xl bg-purple-300 col-span-full cursor-pointer h-12"
+            className="border-2  rounded-xl bg-purple-300 col-span-full cursor-pointer  h-[7vh]"
             type="submit"
           ></motion.input>
         </form>

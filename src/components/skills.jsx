@@ -26,12 +26,12 @@ function Skills() {
         whileInView={{ y: 0, opacity: 100 }}
         transition={{ duration: 2 }}
         viewport={{ once: true }}
-        className="my-14 md:text-5xl text-3xl w-fit border-t-2 border-green-200 pt-4 xl:ml-28 md:ml-10 ml-8 w font-bold"
+        className="my-14 md:text-[3vw] text-[5vw] w-fit border-t-2 border-green-200 pt-4 xl:ml-28 md:ml-10 ml-8 w font-bold"
       >
         Skills
       </motion.h2>
 
-      <div className="mt-10 xl:mx-28 md:mx-10 mx-8 grid 2xl:grid-cols-5 xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-3 gap-5">
+      <div className="mt-10 xl:mx-28 md:mx-10 mx-8 grid 2xl:grid-cols-5 xl:grid-cols-4 md:grid-cols-4 sm:grid-cols-4 grid-cols-4 gap-5">
         <AtomOfSkill
           img={ReactImg}
           initial={0}
