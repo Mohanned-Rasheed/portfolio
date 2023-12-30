@@ -69,7 +69,7 @@ function Hero() {
           <span className="text-purple-400 font-bold"> developer</span>
         </motion.div>
         <motion.div
-          initial={{ x: -1000 }}
+          initial={{ x: -1300 }}
           animate={{ x: 0 }}
           transition={{ delay: 6, duration: 0.5 }}
           className=" md:text-[1vw] text-[1.8vw] max-sm:text-center lg:mt-6 mt-2 text-purple-200"
