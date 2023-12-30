@@ -1,8 +1,6 @@
 import React from "react";
 import BadgeSkill from "./badgeSkill";
-import FlutterImg from "../assets/imgs/flutter.png";
-import ArduinoImg from "../assets/imgs/arduino.png";
-import FirebaseImg from "../assets/imgs/firebasepng.png";
+
 
 function AtomOfProject(props) {
   let badge = props.content.badge;
