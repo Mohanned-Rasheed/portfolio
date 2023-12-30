@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Source+Sans+3:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.transform1{
+  @apply transform hover:scale-105
+}
+
+.transform2{
+  @apply transform hover:scale-95
+}
+
+.transtion1{
+  @apply transition ease-out duration-500
+}
+
+.NavBtn{
+  @apply md:text-sm text-xs text-green-200 font-bold uppercase cursor-pointer rounded-full border-2 hover:border-transparent hover:text-black hover:bg-indigo-400 md:py-4 md:px-4 py-2 px-2 
+}
+
+.ContactMe{
+  @apply bg-white text-black text-xs font-bold uppercase cursor-pointer rounded-full border-2 py-2 px-4
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', "sans-serif";
+  font-weight: 400;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: transparent;
+  
+}
+
+body{
+  background-color: rgb(30,30,30);
+  color: white;
+  
+}
+
+::-webkit-scrollbar{
+  width: 0px;
+  
+}
+
+::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+::placeholder{
+  text-align: center;
+}
+
+#mainScrollBar::-webkit-scrollbar-thumb{
+  background: coral;
+ 
+}
+
+.scroll{
+  scroll-behavior: smooth;
+}
+
