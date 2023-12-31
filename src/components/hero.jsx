@@ -35,10 +35,11 @@ function Hero() {
       <div className="absolute h-[105vh] w-[100%] z-10" />
 
       <Nav></Nav>
+
       {/* <Spline
-        className="absolute hidden z-0 "
-        scene="https://prod.spline.design/r9ISq204R8493YpB/scene.splinecode"
-      /> */}
+          className="absolute h-[50vh] z-0 "
+          scene="https://prod.spline.design/r9ISq204R8493YpB/scene.splinecode"
+        /> */}
 
       <div className="font-bold absolute md:mt-[30vh] mt-[20vh] max-md:text-center sm:ml-20 mx-5 z-20">
         <motion.div
@@ -74,11 +75,11 @@ function Hero() {
           transition={{ delay: 6, duration: 0.5 }}
           className=" md:text-[1vw] text-[1.8vw] max-sm:text-center lg:mt-6 mt-2 text-purple-200"
         >
-          I am an information techonolgy Faculty of Computing and Information
+          I am an fresh graduates from Faculty of Computing and Information
           Technology at King AbdulAziz University
           <br /> my currenlty focues is Developing application expexially
           websites or mobile appilcation
-          <br /> i can say i am a {soft} <Cursor />
+          <br /> I can say I am a {soft} <Cursor />
         </motion.div>
         <motion.div
           initial={{ y: 100, opacity: 0 }}
