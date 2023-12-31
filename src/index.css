@@ -25,7 +25,6 @@
   @apply bg-white text-black md:text-[0.8vw] max-md:text-[1.8vw] font-bold uppercase cursor-pointer rounded-full border-2 py-[0.5vw] px-[0.5vw]
 }
 
-
 *{
   margin: 0;
   padding: 0;
